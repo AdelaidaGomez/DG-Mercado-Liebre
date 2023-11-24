@@ -1,0 +1,392 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0px; 
+    padding: 0px;
+}
+body{
+    max-width: 0 auto;
+}
+/* Tamaños tipograficos */
+.cuerpo-texto{
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+.titulares{
+    font-size: 24px;
+    color: #666;
+}
+.precios{
+    font-size: 20px;
+    margin: 0% 5% 0% 0%;
+}
+.descuentos{
+    font-size: 16px;
+    color: #39b54a;
+}
+.descripciones{
+    font-size: 16px;
+    color: #666;
+    opacity: 0%;
+    transition: opacity 0.5s;
+}
+
+/* Header */
+.main-header-container {
+    background-color: #EAC926;
+    width: 100vw;
+    margin: auto;
+    padding-bottom: 20px;
+}
+/* top header container */
+.header-top-container-mobile{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px 0px 10px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+.logo{
+    width: 200px;
+}
+/* Search Bar */
+.input-box-searchBar{
+    position: relative;
+    width: 70%;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.1);
+}
+.fa-magnifying-glass,
+.input-box-searchBar .search-bar-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.fa-magnifying-glass{
+    left: 5px;
+    font-size: 10px;
+    color: #666;
+}
+.input-box-searchBar input{
+    height: 20px;;
+    outline: none;
+    font-size: 10px;
+    font-weight: 400;
+    border: none;
+    padding: 0 5px 0 18px;
+    background-color: transparent;
+    width: 80%;
+}
+.input-box-searchBar .search-bar-button{
+    font-size: 10px;
+    font-weight: 400;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: #03264C;
+    left: 225px;
+}
+
+.buyWithCreditCard-advertisement{
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.burger-menu{
+    display: block;
+    background-color: #1259c3;
+    color: white;
+    max-width: 40px;
+    max-height: 40px;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+/* NavBar */
+.main-navBar{
+    font-size: 12px;
+    display: none;
+}
+.main-navBar ul {
+    list-style: none;
+}
+.main-navBar a {
+    color: #222222;
+}
+
+/* Banner */
+.banner{
+    width: 100vw;
+}
+
+/* Main */
+main {
+    background-color: #ebebeb;
+    width: 100vw;
+}
+.main-container{
+    width: 100vw;
+    padding: 15px;
+    margin: auto;
+    margin-top: -5px;
+}
+.item-section{
+    display: block;
+    background-color: white;
+    margin: 10px;
+    width: 80vw;
+    transition: box-shadow 0.3s ease-in-out;;
+}
+.item-section:hover{
+    box-shadow: 0px 5px 15px rgb(100, 100, 100); 
+
+    .descripciones{
+        opacity: 100%;
+    }
+}
+.product-image{
+    width: 100%;
+    margin: auto;
+}
+.product-description{
+    border-top: 1px #ebebeb solid;
+    padding: 0 15px 15px;
+    position: relative;
+}
+.fa-truck-moving{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: rotate(90deg) 450ms;
+    transition-duration: 2s;
+}
+.fa-truck-moving:hover{
+    transform: rotate(-90deg);
+}
+.price-discount{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    margin: 20px 0px;
+}
+.last-seen-main-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.offers-main-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Footer */
+.main-container-footer{
+    text-align: center;
+    margin-top: 10px;
+    justify-content: center;
+}
+.sub-section-footer{
+    padding: 0px 10px;
+}
+.sub-section-footer h4 {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.fa-credit-card{
+    font-size: 2em;
+    color: #1259c3;
+}
+.fa-credit-card:hover{
+    color: #39b54a;;
+}
+.fa-gift{
+    font-size: 2em;
+    color: #1259c3;
+}
+.fa-gift:hover{
+    color: #39b54a;;
+}
+.fa-user-shield{
+    font-size: 2em;
+    color: #1259c3;
+}
+.fa-user-shield:hover{
+    color: #39b54a;;
+}
+.copyright{
+    font-size: 12px;
+}
+
+/* Tablet Navegation */
+@media (min-width: 768px) {
+    /* Search Bar */
+    .input-box-searchBar{
+        width: 80%;
+    }
+    .input-box-searchBar .search-bar-button{
+        left: 150px;
+    }
+    .input-box-searchBar input{
+        width: 80%;
+    }
+
+    .item-section{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+    }
+    .main-navBar{
+        font-size: 12px;
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .item-section{
+        display: block;
+        background-color: white;
+        margin: auto;
+        margin-bottom: 10px;
+        width: 40vw;
+        margin-top: 10px;
+    }
+    .header-top-container{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
+    .buyWithCreditCard-advertisement{
+        margin: 0px 10px 0px 10px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    .main-navBar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navBar ul {
+        display: flex;
+    }
+    .main-navBar li {
+        margin: 0 10px;
+    }
+    .main-navBar a {
+        font-size: 12px;
+    }
+
+    .action-buttons{
+        justify-content: center;
+    }
+    input[type="submit"]{
+        width: 50%;
+        height: 40px;
+        border: 1px solid #ebebeb;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: 700;
+        background-color: #2691d9;
+        color: white;
+        margin-right: 50px;
+    }
+    input[type="reset"]{
+        width: 50%;
+        height: 40px;
+        border: 1px solid #ebebeb;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: 700;
+        background-color: red;
+        color: white;
+    }
+}
+
+/* DeskTop Navegation */
+@media (min-width: 770px) {
+    /* searchBar */
+    .input-box-searchBar{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+    .input-box-searchBar .search-bar-button{
+        left: 210px;
+        padding: 9px 11px;
+        font-size: 10px;
+    }
+    .input-box-searchBar input{
+        width: 80%;
+    }
+
+    .item-section{
+        display: block;
+        background-color: white;
+        margin: auto;
+        margin: 10px 20px 10px 20px;
+        width: 20vw;
+    }
+    /* Header */
+    .logo{
+        width: 300px;
+    }
+    .search-bar{
+        font-size: 15px;
+    }
+    .buyWithCreditCard-advertisement{
+        font-size: 15px;
+    }
+    .main-navBar a {
+        font-size: 15px;
+    }
+    /* Login-Register secction */
+    .login-center{
+        margin: auto;
+        padding: 10px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 90%;
+    }
+    .action-buttons{
+        justify-content: center;
+    }
+    input[type="submit"]{
+        width: 30%;
+        height: 40px;
+        border: 1px solid #ebebeb;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: 700;
+        background-color: #2691d9;
+        color: white;
+        margin-right: 100px;
+    }
+    input[type="reset"]{
+        width: 30%;
+        height: 40px;
+        border: 1px solid #ebebeb;
+        border-radius: 5px;
+        font-size: 13px;
+        font-weight: 700;
+        background-color: red;
+        color: white;
+    }
+    /* footer */
+    .main-container-footer{
+        display: flex;
+    }
+}

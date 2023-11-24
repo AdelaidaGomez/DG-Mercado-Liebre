@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register-logIn.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/d517d5ff3f.js" crossorigin="anonymous"></script>
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <div class="main-header-container">
+            <div class="logo">
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo MercadoLiebre">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="title">Registrarse</div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Nombre y Apellido</span>
+                        <input type="text" placeholder="Nombre Completo" required minlength="4">
+                    </div>
+    
+                    <div class="input-box">
+                        <span class="details">Nombre De Usuario</span>
+                        <input type="text" placeholder="Nombre De Usuario" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Fecha De Nacimiento</span>
+                        <input type="date" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Domicilio</span>
+                        <input type="text" placeholder="domicilio" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <span class="details">Contraseña</span>
+                        <input type="text" placeholder="contraseña" required>
+                    </div>
+    
+                    <div class="input-box">
+                        <span class="details">Confirmar Contraseña</span>
+                        <input type="text" placeholder="confirmar contraseña" required>
+                    </div>
+
+                    <div class="file-box">
+                        <span class="details">Foto Usuario</span>
+                        <input type="file" placeholder="domicilio">
+                    </div>
+                </div>
+                
+                <!-- Radio -->
+                <div class="user-profile">
+                    <span class="user-boxes-title">Perfil de Usuario</span>
+                    <div class="category">
+                        <label for="">
+                            <input type="radio" name="vendedor-comprador">
+                            Vender
+                        </label>
+    
+                        <label for="">
+                            <input type="radio" name="vendedor-comprador">
+                            Comprar
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Chekbos -->
+                <div class="user-profile">
+                    <span class="user-boxes-title">Categorías de interes</span>
+                    <div class="category-checkbox">
+                        <label for="">
+                            <input type="checkbox" name="intereses">
+                            Electronica
+                        </label>
+    
+                        <label for="">
+                            <input type="checkbox" name="intereses">
+                            Moda
+                        </label>
+
+                        <label for="">
+                            <input type="checkbox" name="intereses">
+                            Hogar
+                        </label>
+
+                        <label for="">
+                            <input type="checkbox" name="intereses">
+                            Jugueteria
+                        </label>
+
+                        <label for="">
+                            <input type="checkbox" name="intereses">
+                            Vida Sana
+                        </label>
+                    </div>
+                </div>
+
+    
+                <div class="button">
+                    <input onclick="window.location.href = '/'" type="submit" value="Registrarse">
+                    <input type="reset" value="Cancelar">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
