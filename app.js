@@ -10,8 +10,9 @@ const publicFolderPath = path.resolve(__dirname, "./public")
 app.use(express.static(publicFolderPath));
 
 // Ponemos a escuchar el servidor
-app.listen(3035, () => {
-    console.log("Servidor corriendo en http://localhost:3035")
+const port = process.env.PORT || 3001
+app.listen(port, () => {
+    console.log("Servidor corriendo en http://localhost:${port}")
 });
 
 // Definimos las rutas a los distintos pedidos que nuestro sitio sabe responder
