@@ -150,6 +150,10 @@ main {
     .descripciones{
         opacity: 100%;
     }
+    .fa-truck-moving{
+        transform: rotate(-90deg);
+    }
+    
 }
 .product-image{
     width: 100%;
@@ -175,9 +179,7 @@ main {
     transition: rotate(90deg) 450ms;
     transition-duration: 2s;
 }
-.fa-truck-moving:hover{
-    transform: rotate(-90deg);
-}
+
 .price-discount{
     display: flex;
     flex-wrap: wrap;
